@@ -33,7 +33,8 @@
 
 ## About The Project
 
-### Repo QA-Automation-JLABS-Batch-10
+### Repo JlabsQA-Automation-Batch10
+
 Repositori ini dibuat untuk menyimpan tugas - tugas dari kelas QA Automation Batch 10 Jakarta Labs
 
 ## Getting Started
@@ -44,7 +45,7 @@ Java
 ```
 ### Installation
 ```
-git clone https://github.com/alfahmist/QA-Automation-Batch-10.git
+git clone https://github.com/alfahmist/JlabsQA-Automation-Batch10.git
 
 ```
 
