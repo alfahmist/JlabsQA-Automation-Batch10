@@ -40,7 +40,7 @@ public class APITest {
 		assertEquals(responseSignUp.statusCode(), 200);
 		System.out.println(responseSignUp.statusCode());
 	}
-
+	
 	private void fakerTest() {
 		Faker faker = new Faker();
 		email = faker.internet().emailAddress();
