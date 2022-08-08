@@ -290,6 +290,9 @@ https://user-images.githubusercontent.com/48145002/183294083-9c84f900-967d-4002-
 
 ### Tugas 5 
 
+![image](https://user-images.githubusercontent.com/48145002/183471264-d0e1eee7-b18a-481f-a490-c1526199c7c6.png)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 6
