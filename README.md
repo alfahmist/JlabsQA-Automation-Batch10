@@ -121,19 +121,21 @@ System.out.println("Highest number : " + tm.lastKey());
 ### Tugas 2
 
 Pada minggu ke-2 mempelajari OOP (Object Oriented Programming).
-Kami diberi tugas membuat calculator sederhana menggunakan OOP. kalau inputnya string, throw error kalo dia bukan angka.
+Kami diberi tugas membuat calculator sederhana menggunakan OOP. dengan kondisi :
+ kalau inputnya string, throw error kalo dia bukan angka.
+
 saya membuatnya dengan flow berikut.
 
 ![image](https://user-images.githubusercontent.com/48145002/183291251-af9e56fb-ce4b-41cd-b796-52063168a550.png)
 
 
 1. Memilih Menu.
-2. Jika tidak ada menunya input menu lagi.
+2. Jika input nomor menunya tidak ada throw error input menu lagi.
 3. Jika ada lanjut input angka
 4. Input angka pertama dan kedua.
 5. Apakah ada string atau tidak ?
-5. Jika ada tipe data string print error dan kembali input angka lagi.
-6. jika tidak ada print hasil.
+6. Jika ada tipe data string throw error dan kembali input angka lagi.
+7. jika tidak ada print hasil.
 
 Untuk throw error nya saya bungkus dengan error handling yaitu try catch agar program dapat terus berjalan.
 
