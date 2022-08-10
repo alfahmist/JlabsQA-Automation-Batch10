@@ -273,8 +273,25 @@ tugas4
     ├── BaseTest.java   # congfiguration (Webdriver, BeforeTest and AfterTest)
     ├── SauceDemo.java  # main test
 ```
-    
-    
+flow login
+input username
+input password
+klik button login
+
+flow inventory
+masukkan id barang
+klik button add to cart
+
+flow checkout
+input nama
+input alamat
+input zip code
+klik finish
+klik continue
+
+flow cartpage
+klik checkout
+
 * Potongan Code
 ```
 @Test
