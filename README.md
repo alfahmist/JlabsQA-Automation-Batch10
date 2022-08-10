@@ -189,14 +189,14 @@ Flownya ketika sudah input username seperti ini
 
 ![image](https://user-images.githubusercontent.com/48145002/183459351-1d14fff0-a716-4c7e-b87e-6e4d90318b42.png)
 
-
-1. Masuk frame ifinbox
-2. cari id email
-3. klik email
-4. Keluar ifinbox
-5. Masuk ke frame ifmail
-6. cari id text
-7. print text
+1. klik button next sampai berada di halaman mail yang dicari ada.
+2. Masuk frame ifinbox.
+3. cari id email.
+4. klik email.
+5. Keluar ifinbox.
+6. Masuk ke frame ifmail.
+7. cari id text.
+8. print text.
 
 
 * Lokasi
