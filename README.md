@@ -427,6 +427,13 @@ Upload .jmx ke repository tugas yang berisi
 4. Spike load test
 Database loadtest
 
+* Lokasi
+```
+tugas7
+ └──JlabsJemeter.jmx
+``` 
+Untuk membuka filenya membutuhkan Apache JMeter 5.5
+
 * Capture Apache JMeter
 ![image](https://user-images.githubusercontent.com/48145002/184054213-7b56e2a6-c64d-44cb-a761-851fedb8ebe3.png)
 
