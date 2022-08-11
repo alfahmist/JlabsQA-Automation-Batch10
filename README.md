@@ -261,7 +261,12 @@ https://user-images.githubusercontent.com/48145002/183455201-8ba1ec02-2e12-4c3d-
 
 ### Tugas 4
 
+pada tugas 4 mempelajari :
+1. multithread
+2. headless test
+3. page object model
 
+Tugas :
 1. Go to saucedemo.com.
 2. Input username and password.
 3. Add 2 product.
