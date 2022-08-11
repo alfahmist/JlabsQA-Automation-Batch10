@@ -405,6 +405,11 @@ public class APITest {
 3. Add andromedasiddhik or cupidline as collaborator
 4. To get a full marks must be uploaded in 12 Agustus 2022
 
+* Github Link
+
+```
+https://github.com/alfahmist/JlabsQA-Automation-Batch10/
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -416,6 +421,9 @@ Upload .jmx ke repository tugas yang berisi
 3. GraphQL load test
 4. Spike load test
 Database loadtest
+
+* Capture Apache JMeter
+![image](https://user-images.githubusercontent.com/48145002/184054213-7b56e2a6-c64d-44cb-a761-851fedb8ebe3.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
