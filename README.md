@@ -41,7 +41,8 @@ Repositori ini dibuat untuk menyimpan tugas - tugas dari kelas QA Automation Bat
 
 ### Prerequisites
 ```
-Java
+Java 8+
+Apache JMeter 5.5
 ```
 ### Installation
 ```
