@@ -410,4 +410,12 @@ public class APITest {
 
 ### Tugas 7
 
+Upload .jmx ke repository tugas yang berisi
+1. Simple load test
+2. Data driven load test
+3. GraphQL load test
+4. Spike load test
+Database loadtest
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
