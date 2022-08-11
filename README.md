@@ -175,7 +175,14 @@ void printError(String message) {
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 3
+Pada tugas 3 mempelajari basic selenium, seperti :
+1. mencari elemen
+2. klik elemen
+3. selenium wait (implicit , explicit)
+4. setting driver (membuka browser, setting browser)
 
+
+tugas 3 :
 1. Go to yopmail.com
 2. Input automationtest as email
 3. Use switch iframe to get inbox content
