@@ -334,10 +334,19 @@ https://user-images.githubusercontent.com/48145002/183294083-9c84f900-967d-4002-
 2. use user faker to create a dummy email, dummy name, and dummy phone number.
 3. Assert to get 200OK.
 
-*API Sign up
+Dependency yang dibutuhkan adalah Rest Assured.
+
+* API Sign up
 ![image](https://user-images.githubusercontent.com/48145002/184049479-2f6a8b63-2831-4247-87f5-f40b6bfade1e.png)
 
-*Test lewat Postman
+ditemukan url untuk melakukan sign up 
+yaitu : https://api-staging-builder.engineer.ai/users  
+method : post  
+untuk data json yang dibutukan ada di tab payload
+
+![image](https://user-images.githubusercontent.com/48145002/184076916-91feaae6-4011-459b-a8d1-985b880612a9.png)
+
+* Test lewat Postman
 ![image](https://user-images.githubusercontent.com/48145002/183471264-d0e1eee7-b18a-481f-a490-c1526199c7c6.png)
 
 * User Faker
@@ -373,7 +382,7 @@ public class APITest {
 	@Test
 	void signUp() {
 
-		RestAssured.baseURI = "https://staging.builder.engineer.ai";
+		RestAssured.baseURI = "https://api-staging-builder.engineer.ai";
 		fakerTest();
 		String payload = String.format("{\"user\":"
 				+ "{\"email\":\"%s\","
