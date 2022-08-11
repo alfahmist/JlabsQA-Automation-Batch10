@@ -26,18 +26,23 @@ public class APITest {
 	@Test
 	void signUp() {
 
-		RestAssured.baseURI = "https://staging.builder.engineer.ai";
+		RestAssured.baseURI = "https://api-staging-builder.engineer.ai";
 		fakerTest();
 		String payload = String.format("{\"user\":"
 				+ "{\"email\":\"%s\","
 				+ "\"first_name\":\"%s\","
 				+ "\"phoneNumber\":\"%s\","
 				+ "\"password\":\"%s\"}}", email, name, phoneNumber, password);
+		//		String payload = String.format("{\"user\":"
+		//				+ "{\"email\":\"%s\","
+		//				+ "\"first_name\":\"%s\","
+		//				+ "\"phoneNumber\":\"%s\","
+		//				+ "\"password\":\"%s\"}}", email, name, phoneNumber, password);
 
 		Response responseSignUp = RestAssured.given().contentType(contentType).body(payload).when()
 				.post("/users");
 		assertEquals(responseSignUp.statusCode(), 200);
-		System.out.println(responseSignUp.statusCode());
+		System.out.println("Hasil : " + responseSignUp.statusCode());
 
 	}
 
