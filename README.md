@@ -269,28 +269,28 @@ tugas4
  │  ├── Checkout.java   # handle Checkout (fill customer information, click continue and finish button, getSuccessText)
  │  ├── Inventory.java  # handle Inventory (click an item button to add to cart)  
  │  └── LoginPage.java  # handle Login (input username and password, click login button)            
- ├──tugas4.test 
+ └──tugas4.test 
     ├── BaseTest.java   # congfiguration (Webdriver, BeforeTest and AfterTest)
     ├── SauceDemo.java  # main test
 ```
-flow login
-input username
-input password
-klik button login
+*flow login
+1. input username
+2. input password
+3. klik button login
 
-flow inventory
-masukkan id barang
-klik button add to cart
+*flow inventory
+1. masukkan id barang
+2. klik button add to cart
 
-flow checkout
-input nama
-input alamat
-input zip code
-klik finish
-klik continue
+*flow checkout
+1. input nama
+2. input alamat
+3. input zip code
+4. klik finish
+5. klik continue
 
 flow cartpage
-klik checkout
+1. klik checkout
 
 * Potongan Code
 ```
@@ -317,12 +317,94 @@ https://user-images.githubusercontent.com/48145002/183294083-9c84f900-967d-4002-
 
 ### Tugas 5 
 
+1. Find API to signup.
+2. use user faker to create a dummy email, dummy name, and dummy phone number.
+3. Assert to get 200OK.
+
+*API Sign up
+![image](https://user-images.githubusercontent.com/48145002/184049479-2f6a8b63-2831-4247-87f5-f40b6bfade1e.png)
+
+*Test lewat Postman
 ![image](https://user-images.githubusercontent.com/48145002/183471264-d0e1eee7-b18a-481f-a490-c1526199c7c6.png)
+
+* User Faker
+```
+private void fakerTest() {
+	Faker faker = new Faker();
+	email = faker.internet().emailAddress();
+	name = email.substring(0, email.indexOf('@')).replaceAll("\\.", " ");
+	phoneNumber = faker.number().digits(11).toString();
+	password = faker.internet().password(8,10);
+	}
+```
+
+1. email didapatkan dari faker.internet().emailAddress()
+2. nama didaptakan dari potongan email sebelum @
+3. phonenumber didaptkan dari faker.number().digits(11).toString(); dengan panjang digit 11 lalu diubah tipedata string
+4. password didapatkan dari faker.internet().password(8,10), dengan ketentuan minimal 8 karakter dan maksimal 10 karakter
+* Lokasi
+```
+tugas4
+ └──APITest.java
+```
+ * Potongan Code
+ ```
+public class APITest {
+
+	String contentType = "application/json";
+	String email;
+	String name;
+	String phoneNumber;
+	String password;
+
+	@Test
+	void signUp() {
+
+		RestAssured.baseURI = "https://staging.builder.engineer.ai";
+		fakerTest();
+		String payload = String.format("{\"user\":"
+				+ "{\"email\":\"%s\","
+				+ "\"first_name\":\"%s\","
+				+ "\"phoneNumber\":\"%s\","
+				+ "\"password\":\"%s\"}}", email, name, phoneNumber, password);
+
+		Response responseSignUp = RestAssured.given().contentType(contentType).body(payload).when()
+				.post("/users");
+		assertEquals(responseSignUp.statusCode(), 200);
+		System.out.println("Hasil : " + responseSignUp.statusCode());
+
+	}
+
+	private void fakerTest() {
+		Faker faker = new Faker();
+		email = faker.internet().emailAddress();
+		name = email.substring(0, email.indexOf('@')).replaceAll("\\.", " ");
+		phoneNumber = faker.number().digits(11).toString();
+		password = faker.internet().password(8,10);
+
+		System.out.println(email);
+		System.out.println(name);
+		System.out.println(phoneNumber);
+		System.out.println(password);
+	}
+}
+
+ ```
+ 
+ * Output
+
+![image](https://user-images.githubusercontent.com/48145002/184052423-0c2ffdd1-f1aa-40df-97fb-1e01a7a4fea3.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Tugas 6
+
+1. Create readme.md for all your assignment
+2. Create a repository that contains all your assignment
+3. Add andromedasiddhik or cupidline as collaborator
+4. To get a full marks must be uploaded in 12 Agustus 2022
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
