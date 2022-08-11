@@ -187,7 +187,7 @@ Pada tugas 3 diutamakan bagaimana cara untuk pindah iframe dari inbox ke mail.
 
 Flownya ketika sudah input username seperti ini
 
-![image](https://user-images.githubusercontent.com/48145002/183459351-1d14fff0-a716-4c7e-b87e-6e4d90318b42.png)
+![image](https://user-images.githubusercontent.com/48145002/184048529-44e65bc6-89dd-48bc-b2a8-12253dc4d0a2.png)
 
 1. klik button next sampai berada di halaman mail yang dicari ada.
 2. Masuk frame ifinbox.
