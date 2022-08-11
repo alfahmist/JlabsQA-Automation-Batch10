@@ -416,6 +416,10 @@ https://github.com/alfahmist/JlabsQA-Automation-Batch10/
 
 ### Tugas 7
 
+Loadtest digunakan untuk menguji performance sistem, mensimulasikan reaksi server ketika banyak user yang mengakses.
+
+Loadtest berada di level blackbox testing
+
 Upload .jmx ke repository tugas yang berisi
 1. Simple load test
 2. Data driven load test
